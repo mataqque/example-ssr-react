@@ -1,0 +1,127 @@
+.page-promo {
+    .form-control{
+        border:2px solid #37594e;
+        border-top-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 0 0.75rem;
+        height: 2.8rem;
+    }
+    .contact-title {
+        background: url(../../images/contacto/contact-title.png) no-repeat;
+        background-size: contain;
+        width: 365px;
+        padding-top: 115px;
+    }
+    .padding-contain{
+        padding:3rem;
+        @media (max-width:768px){
+            padding:.5rem;
+        }
+    }
+    .section-promo {
+        background-color: #dbdfe0;
+        position: relative;
+        .content-nota-legal{
+            height: 4vw;
+            @media (max-width:768px){
+                height: auto;
+            }
+        }
+        .planta{
+            position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            bottom: 40px;
+            right: 0;
+            width: 150px;
+            height: 115px;
+            @media (max-width:1390px){
+                display: none;
+            }
+        }
+        .form-row{
+            div{
+                @media (max-width:768px){
+                    padding-right: 0px;
+                    padding-left: 0px;
+                }
+            }
+        }
+        .img-promo-page{
+            background-size: cover;
+            height: 100vh;
+            @media (max-width:768px){
+                height: auto;
+                padding-top: 100%;
+            }
+        }
+        .contain {
+            width: 100%;
+            height: calc(100% - 111px);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            @media (orientation: portrait) {
+                height: 100%;
+            }
+
+            .promo-image {
+                background-repeat: no-repeat;
+                background-size: contain;
+                padding-top: 44%;
+                width: 53%;
+            }
+
+            .form {
+                width: 67%;
+
+                .headerInvisible {
+                    display: none !important;
+                }
+
+                .contain-contact {
+                    height: calc(100vh - 111px);
+                    background: unset !important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .contact-title {
+                        background: url(../../images/contacto/contact-title.png) no-repeat;
+                        background-size: contain;
+                        width: 365px;
+                        padding-top: 115px;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .contain {
+                flex-direction: column;
+
+                .promo-image,
+                .form {
+                    width: 100%
+                }
+
+                .promo-image {
+                    padding-top: 100%;
+                }
+
+                .form {
+                    //padding: 22% 0;
+                    padding: 10% 0;
+                }
+            }
+        }
+    }
+}

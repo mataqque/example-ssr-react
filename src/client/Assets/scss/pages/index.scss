@@ -1,0 +1,55 @@
+@import './inicio.scss';
+@import './complaintsBook.scss';
+@import './promotions.scss';
+@import './promo.scss';
+@import './multimedia.scss';
+@import './us.scss';
+@import './postventa.scss';
+@import './fases.scss';
+@import './workingprogress.scss';
+@import './landing.scss';
+
+.slick-track {
+	display: flex;
+}
+.slick-list {
+	overflow: hidden;
+}
+.slick-slide {
+	display: flex;
+}
+.slick-slide > div {
+	width: 100%;
+	display: flex;
+	& > div {
+		width: 100% !important;
+		picture {
+			width: 100% !important;
+		}
+	}
+	.expand-img {
+		display: flex;
+	}
+}
+.slick-dots,
+.owl-dots {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	li,
+	.owl-dot {
+		width: 8px;
+		height: 8px;
+		border-radius: 10rem;
+		background: white;
+		margin: 0 0.2rem;
+		opacity: 0.5;
+		transition: 0.3s;
+		font-size: 0;
+		&.slick-active,
+		&.active {
+			width: 2rem;
+			opacity: 1;
+		}
+	}
+}

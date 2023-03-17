@@ -1,0 +1,92 @@
+.hotspot {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 2vw;
+    height: 2vw;
+    @media (max-width:540px){
+        height: 6vw;
+        width: 6vw;
+    }
+    .pulse,
+    a.dot {
+        height: 1.5vw;
+        width: 1.5vw;
+        border-radius: 50%;
+        background-color: $nesta_color;
+        @media (max-width:540px){
+            height: 5vw;
+            width: 5vw;
+        }
+    }
+
+    .pulse {
+        position: absolute;
+        -webkit-animation: pulsate 1.5s ease-out;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-delay: 2s;
+    }
+
+    a.dot {
+        display: block;
+        text-decoration: none;
+        z-index: 1;
+
+        i.fa-plus {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &::before {
+                font-family: "Font Awesome 5 Free";
+                font-style: normal;
+                font-size: .6vw;
+                color: white;
+                transition: 100ms ease;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media (max-width:540px){
+                    font-size: 2vw;
+                }
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                &::before {
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+            }
+
+        }
+
+        .preview {
+            height: 14.3vw;
+            width: 11.5vw;
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: visibility 0.25s, opacity 0.25s ease-in-out;
+        }
+
+        &:hover {
+            .preview {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

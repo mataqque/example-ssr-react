@@ -1,0 +1,52 @@
+.page-promociones {
+    .imgtitle{
+        .paloma-bird{
+            display: none;
+        }
+    }
+    .section-promotions {
+        background-color: #dbdfe0;
+        padding-bottom: 20px;
+        .contain {
+            width: 100%;
+            height: calc(100% - 111px);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @media (orientation: portrait) {
+                height: 100%;
+            }
+        }
+
+        .promotions-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 77%;
+            @media (max-width:540px){
+                width: 90%;
+            }
+
+            .promo {
+                height: 0;
+                margin: 2%;
+                width: 500px;
+                padding-top: 1000px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                //box-shadow: 0 30px 80px rgba(0, 0, 0, 0.14), 0 20px 70px rgba(0, 0, 0, 0.12);
+                @media (max-width:768px){
+                    width: 100%;
+                    padding-top: 192%;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}

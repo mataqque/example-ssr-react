@@ -1,0 +1,217 @@
+.page-nosotros {
+	.section-nosotros {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		background-color: #dbdfe0;
+		@media (max-width: 769px) {
+			background-color: #f5f6f7;
+		}
+		.contain {
+			width: 100%;
+			height: calc(100% - 111px);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@media (max-width: 769px) {
+				flex-direction: column-reverse;
+			}
+			.contentImgTitle {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+			}
+
+			.content-lar-map {
+				width: 66%;
+				padding-top: 44%;
+				background-color: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				@media (max-width: 769px) {
+					width: 90%;
+					padding-top: 80%;
+					margin-top: 40px;
+				}
+				.partBottom {
+					width: 100%;
+					height: 25px;
+					background-image: url(../../images/nosotros/partBottom.png);
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center center;
+					position: absolute;
+					top: 0;
+				}
+				&:before {
+					content: '';
+					position: absolute;
+					right: 0;
+					top: 0;
+					width: 6%;
+					height: 100%;
+					background-image: url(../../images/nosotros/lineRight.png);
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: center center;
+					pointer-events: none;
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					left: 0;
+					bottom: 7%;
+					width: 15.45%;
+					height: 50%;
+					background-image: url(../../images/nosotros/bottomElement.png);
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center center;
+					pointer-events: none;
+				}
+				@media (max-width: 769px) {
+					width: 100%;
+					&:before {
+						content: unset;
+					}
+					&:after {
+						content: unset;
+					}
+				}
+				.lar-map {
+					position: absolute;
+					top: 17%;
+					width: 100%;
+					height: 70%;
+					background-size: contain;
+					background-position: bottom;
+					background-repeat: no-repeat;
+					@media (max-width: 769px) {
+						height: 84%;
+						top: 4%;
+					}
+					.hotspot {
+						display: none;
+						.pulse,
+						a.dot {
+							background-color: $nesta_color;
+						}
+
+						&:nth-child(1) {
+							right: 68%;
+							bottom: 59%;
+						}
+						&:nth-child(2) {
+							right: 72%;
+							bottom: 48%;
+						}
+						&:nth-child(3) {
+							right: 80%;
+							bottom: 46%;
+						}
+						&:nth-child(4) {
+							right: 91%;
+							bottom: 39%;
+						}
+						&:nth-child(5) {
+							right: 76%;
+							bottom: 38%;
+						}
+						&:nth-child(6) {
+							right: 72%;
+							bottom: 27%;
+						}
+						&:nth-child(7) {
+							right: 85%;
+							bottom: 25%;
+						}
+						&:nth-child(8) {
+							right: 73%;
+							bottom: 17%;
+						}
+						&:nth-child(9) {
+							right: 85%;
+							bottom: 15%;
+						}
+					}
+				}
+			}
+
+			.backing {
+				width: 34%;
+				display: flex;
+				flex-direction: column;
+				@media (max-width: 769px) {
+					width: 100%;
+					padding-top: 10%;
+				}
+				.imgtitle {
+					.palomas {
+						background-size: contain;
+						background-repeat: no-repeat;
+						background-position: center center;
+						width: 85%;
+						height: 85px;
+						transform: translateY(90%);
+						margin: auto;
+						@media (max-width: 769px) {
+							transform: translateY(50%);
+						}
+					}
+				}
+				.experience {
+					margin: 3%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					text-align: center;
+					font-family: 'Geomanist Light', 'sans-serif';
+					@media (max-width: 769px) {
+						margin: 0px;
+						flex-direction: column;
+					}
+					span {
+						width: 100%;
+						margin-top: 10px;
+						line-height: 1.2em;
+						@media (max-width: 769px) {
+							width: 100%;
+							margin-left: 0px;
+						}
+					}
+					.company-logo {
+						background-repeat: no-repeat;
+						background-size: contain;
+						height: 0;
+						padding-top: 13%;
+						width: 30%;
+						@media (max-width: 769px) {
+							width: 118px;
+							height: 50px;
+							padding-top: unset;
+						}
+						&.--cosapi {
+							background-image: url(../../images/nosotros/cosapi.svg);
+							@media (max-width: 769px) {
+								width: 170px;
+								height: 70px;
+							}
+						}
+						&.--lar {
+							background-image: url(../../images/nosotros/grupo-lar.svg);
+							@media (max-width: 1080px) {
+								margin-top: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

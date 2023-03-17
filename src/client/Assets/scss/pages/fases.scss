@@ -1,0 +1,917 @@
+.page-fases{
+
+    @media (max-width:540px){
+        .pr-5{ padding-right: 0px !important; }
+        .pl-5{ padding-left: 0px !important; }
+        .pb-5{ padding-bottom: 1rem !important; }
+        .mt-5{ margin-top: 0px !important; }
+        .contentImgTitle{
+            .imgtitle{
+                width: 70vw;
+                .paloma-bird{
+                    display: block;
+                    width: 10vw;
+                    height: 10vw;
+                }
+            }
+        }
+    }
+
+    .content-vista-espectacular{
+        .title-vista-espectacular{
+            line-height: 1em;
+            position: relative;
+            font-size: calc(2.1vw + .5vw);
+            .img-paloma-naranja-right{
+                position: absolute;
+                width: 5vw;
+                top: -3vw;
+                right: 1vw;
+                @media (max-width:540px){
+                    position: absolute;
+                    width: 17vw;
+                    top: -10vw;
+                    right: 3vw;
+                }
+            }
+        }
+        .subtitle-vista-espectacular{
+            margin-top: calc(1.2vw + .5vw);
+            padding-top: calc(1.0vw + .5vw);
+            font-size: calc(1vw + .5vw);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            &:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                width: 200px;
+                height: 2px;
+                background: #dbdfe0;
+                background: -webkit-gradient(left top, right top, color-stop(0%, #dbdfe0), color-stop(40%, #37594e), color-stop(61%, #37594e), color-stop(100%, #dbdfe0));
+                background: linear-gradient(to right, #dbdfe0 0%, #37594e 40%, #37594e 61%, #dbdfe0 100%);
+                margin: auto;
+            }
+        }
+        .section-piros{
+            @media(max-width:500px){
+                overflow: hidden;
+            }
+        }
+        .img-vista-espectacular{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .content-render{
+        padding-left:6vw;
+        @media (max-width:540px){
+            padding-left: 0vw;
+        }
+        .img-render{
+            padding-left: 1vw;
+            padding-right: 1vw;
+            img{
+                transform: translateY(-7vw);
+                @media (max-width:540px){
+                    transform: translateY(2vw);
+                }
+            }
+        }
+        .img-financiado{
+            width: 18vw;
+            margin: 1.5vw auto;
+            @media (max-width:540px){
+                width: 65vw;
+                margin: 5.5vw auto;
+            }
+        }
+        
+        .title-render{
+            font-size: calc(2.1vw + .5vw);
+            line-height: 1em;
+            .badassmoon{
+                font-family: "Geomanist Bold";
+                font-size: calc(2.1vw + .5vw);
+                @media(max-width:500px){
+                    font-size: calc(2.1vw + 9vw);
+                }
+            }
+            span{
+                font-size: calc(4vw + 3vw);
+            }
+            @media (max-width:540px){
+                font-size: calc(2.1vw + 9vw);
+                width: 100%;
+                span{
+                    font-size: calc(4vw + 18vw);
+                }
+            }
+        }
+        .subtitle-render{
+            margin-top: 10px;
+            font-size: calc(1vw + .5vw);
+            @media (max-width:540px){
+                width: 100%;
+                font-size: calc(1vw + 4vw);
+            }
+        }
+
+        .content-atributos{
+            width: 30vw;
+            // margin: auto;
+            @media (max-width:540px){
+                width: 100%;
+            }
+            .atributo{
+                width: 15vw;
+                margin-top: 1vw;
+                justify-content: center;
+                @media (max-width:540px){
+                    width: 45vw;
+                }
+                .icon{
+                    width: 4.8vw;
+                    height: 4.8vw;
+                    @media (max-width:540px){
+                        width: 18vw;
+                        height: 18vw;
+                    }
+                }
+                .text-atributo{
+                    margin-left: .5vw;
+                    width: 7vw;
+                    font-size: 1vw;
+                    @media (max-width:540px){
+                        margin-left: 1vw;
+                        width: 30vw;
+                        font-size: 3.2vw;
+                    }
+                }
+            }
+        }
+    }
+    
+    .hierba{
+        top: 4%;
+    }
+    .name-carousel{
+        bottom: 3% !important;
+        @media (max-width:768px){
+            bottom: 0% !important;
+        }
+    }
+    .lightGallery{
+        @media (max-width:768px){
+            .Coltipologia{
+                margin-top:20px !important;
+            }
+        }
+    }
+    .imgtitle{
+        .paloma-bird{
+            &:nth-child(1){
+                left: -17%;
+            }
+            &:nth-child(2){
+                right: -17%;
+            }
+        }
+        span{
+            line-height: .7em;
+            transform: translateY(-6px);
+            @media (max-width:540px){
+                line-height: .8em;
+                transform: translateY(-2px);
+            }
+        }
+    }
+    .contentSlider{
+        &.carousel-marco{
+            &:after{
+                width: 100%;
+            }
+            .owl-prev{
+                left: .6%;
+            }
+            .owl-next{
+                right: 1.2% !important;
+                @media (max-width:768px){
+                    right: 0% !important;
+                }
+            }
+        }
+    }
+    .section-fases{
+        position: relative;
+        background-color: #f5f6f7;
+        .owl-carousel.carousel-marco .owl-stage-outer:before {
+            width: 100%;
+            background: #f5f6f7;
+            -webkit-mask-size: cover;
+        }
+        .card{
+            background-color: transparent;
+            span{
+                font-family: "Geomanist Regular";
+                color:#37594e;
+            }
+        }
+        @media (max-width:540px){
+            .content-vista-espectacular{
+                flex-direction: column-reverse !important;
+                .title-vista-espectacular{
+                    font-size: calc(5.1vw + 1.9vw);
+                    margin-top: 8%;
+                    padding-bottom: 4%;
+                }
+                .subtitle-vista-espectacular{
+                    padding-top: 6%;
+                    width: 100%;
+                    font-size: calc(3vw + 1.5vw);
+                }
+            }
+            .section-areas-comunes{
+                .paloma-bird{
+                    @media(max-width:740px){
+                        
+                    }   
+                }
+                .img-gallery{
+                    .bgCover{
+                        padding-top: 74% !important;
+                    }
+                }
+            }
+            .section-fotos-departamento{
+                .img-gallery{
+                    .bgCover{
+                        padding-top: 74% !important;
+                    }
+                }
+            }
+        }
+        .content_estado{
+            width: 100%;
+            height: 8.5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            .estado_image{
+                transform: translateY(-.5vw);
+                width: calc(17.71vw + 1.5vw);
+                padding-top: calc(3.65vw + 1.5vw);
+            }
+            .icon-car{
+                width: 2.4rem;
+                margin-right: .5rem;
+            }
+            .text-fase-2,.text-fase-1{
+                margin-bottom: 0;
+                .geomanist-bold{
+                    top: 1.5px;
+                    position: relative;
+                }
+            }
+            @media (max-width:540px){
+                height: 20.5vw;
+                .estado_image{
+                    width: calc(17.71vw + 35vw);
+                    padding-top: calc(3.65vw + 6.5vw);
+                    transform: translateY(-2vw);
+                }
+            }
+        }
+        .contentPreparateNuevaVida{
+            width: 100%;
+            background-size: cover;
+            height: 32vw;
+            background-size: contain;
+            background-position: right;
+            position: relative;
+            // @media (max-width:1170px){
+            //     background-image: unset !important;
+            //     background:#91a833;
+            //     height: 280px;
+            // }
+            .birds{
+                width: 29%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                @media (max-width:1170px){
+                    display: none;
+                }
+            }
+            .contentTitlePiros{
+                position: absolute;
+                left: 8%;
+                top: 13%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                // justify-content: center;
+                color: #37594e;
+                span{
+                    font-family: "Geomanist Bold";
+                }
+                // @media (max-width:1170px){
+                //     position: relative;
+                //     color: #fff;
+                //     text-align: center;
+                //     align-items: center;
+                //     left: 0;
+                // }
+                .text-small{
+                    font-size: 1.1vw;
+                }
+                .f-argentum{
+                    text-transform: unset;
+                    font-size: 43px;
+                    line-height: 1em;
+                    font-family: "Geomanist Light";
+                    // @media (max-width:1170px){
+                    //     color:#fff;
+                    //     font-family: inherit;
+                    //     text-transform: uppercase;
+                    //     font-weight: bold;
+                    //     font-size: 25px;
+                    //     text-align: center;
+                    // }
+                    span{
+                        font-family: "Geomanist Bold";
+                    }
+                }
+                .f-gardenia{
+                    text-transform: unset;
+                    font-size: 3.5vw;
+                    line-height: 1em;
+                    font-family: "Geomanist Light";
+                    @media (max-width:768px){
+                        font-size: 28px;
+                    }
+                    // @media (max-width:1170px){
+                    //     color:#fff;
+                    //     font-family: inherit;
+                    //     text-transform: uppercase;
+                    //     font-weight: bold;
+                    //     font-size: 25px;
+                    //     text-align: center;
+                    // }
+                    span{
+                        font-family: "Geomanist Bold";
+                    }
+                    .paloma-naranja-right{
+                        width: 4vw;
+                        height: 4vw;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        transform: translateX(2vw);
+                        @media (max-width:768px){
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                }
+                .btn-nesta{
+                    width: max-content;
+                }
+            }
+        }
+        .img_vive_piros{
+            width: 100%;
+            padding-top: 40.9%;
+            background-size: contain;
+            position: relative;
+            background-position: 12%;
+            @media (max-width:768px){
+                padding-top: 84%;
+            }
+            .render{
+                width: 53.5%;
+                height: 37vw;
+                position: absolute;
+                top: 5%;
+                left: 0;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+        }
+        .img_cabecera{
+            width: 100%;
+            margin-top: 1%;
+            padding-top: 12.7%;
+            background-size: cover;
+            @media (max-width:768px){
+                padding-top: 23%;
+            }
+        }
+        .section-fotos-departamento{
+            .imgtitle{
+                span{
+                    transform: translateY(-6px);
+                    @media (max-width:540px){
+                        transform: translateY(0px);
+                    }
+                }
+            }
+        }
+        .section-select-modelo{
+            .bgImg{
+                border-top-left-radius: 35px;
+                border-bottom-left-radius: 17px;
+                border-top-right-radius: 17px;
+                border-bottom-right-radius: 35px;
+            }
+        }
+        .section-contact{
+            padding-bottom: 5%;
+            .topPart{
+                transform: translateY(-55%);
+                @media (max-width:540px){
+                    transform: translateY(0px);
+                }
+            }
+            
+        }
+    }
+    .desktop{
+        display: inherit;
+        @media(max-width:740px){
+            display: none;
+        }
+    }
+    .movil{
+        display: inherit;
+        @media(min-width:740px){
+            display: none;
+        }
+    }
+    .fase-1{
+        .text-fase-2{
+            display: none!important;
+        }
+        .--rooms-3{
+            display: none!important;
+        }
+        .content_estado-footer {
+            display: none;
+        }
+        .text-fase-1{
+            display: flex;
+            color: white;
+            font-size: 1.5rem;
+            top: -1rem;
+            position: relative;
+            @media(max-width:500px){
+                top: 0rem;
+            }
+        }
+        .text-fase-2{
+            display: none;
+        }
+    }
+    .fase-2{
+        overflow: hidden;
+        
+        .--rooms-3{
+            display: none!important;
+        }
+        .text-fase-1{
+            display: none;
+        }
+        .text-fase-2{
+            display: flex;
+        }
+        @media(max-width:500px){
+        }
+        .name-carousel.right{
+            background-position: left!important;
+        }
+        .img-vista-espectacular{
+            padding-left: 2vw;
+            padding-right: 2vw;
+            @media (max-width:540px){
+                padding-left: 0vw;
+                padding-right: 0vw;
+            }
+            .img.img-fluid{
+                @media(max-width:500px){
+                    position: absolute;
+                    width: 100vw;
+                    min-width: 101vw;
+                    left: -13.4vw;
+                }
+            }
+        }
+        .img-paloma-naranja-right{
+            top: -5vw!important;
+            right: -4vw!important;
+            @media(max-width:500px){
+                top: -13vw!important;
+                right: -18vw!important;
+            }
+        }
+        .content-70{
+            @media(min-width:740px){
+                width: 86%;
+            }
+            @media(min-width:900px){
+                width: 60%;
+            }
+
+        }
+        .container-fluid.pr-5.pl-5{
+            padding-left: 0!important;
+            padding-right: 0!important;
+        }
+        .title-2{
+            min-width: 40rem;
+            margin-bottom: 3rem;
+            @media(max-width:500px){
+                min-width: 13rem;
+                width: 16rem;
+                margin-bottom: 0;
+            }
+        }
+        .content-text-intersection{
+            .badassmoon{
+                font-size: 2.5vw;
+                font-family: "Geomanist Bold";
+            }
+        }
+        .paloma-bird-1{
+            width: 14vw!important;
+            height: 14vw!important;
+            top: -17vw;
+        }
+        .title-render,.subtitle-render{
+            color: white;
+            .badassmoon,.geomanist-bold{
+                color: #00BB97;
+            }
+        }
+        .carousel-marco::after{
+            mask-image: none;
+            background: transparent;
+        }
+        .name-carousel{
+            background-image:url(../../images/fases/bg-text.png)!important;
+            bottom: -3rem !important;
+            left: 2rem !important;
+            padding-right: 2rem;
+            padding-left: 1.5rem;
+            width: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            @media(max-width:500px){
+                width: 31vw;
+                bottom: -6.5vw!important;
+                padding-right: 8vw;
+                padding-left: 4vw;
+            }
+            @media(min-width:1400px){
+                padding-right: 4rem;
+                width: 14rem;
+                left: 6rem !important;
+            }
+            span{
+                transform: inherit!important;
+                font-size: 22px;
+                line-height: 1.8rem;
+                text-align: left;
+                @media(max-width:500px){
+                    font-size: 3.5vw;
+                    line-height: 4.5vw;
+                }
+            }
+        }
+        .carousel-marco{
+            height: 100%;
+            position: relative;
+            margin: auto;
+            width: 40rem;
+            @media(max-width:900px){
+                width: 86vw;
+            }
+            @media(min-width:900px){
+                width: 35rem;
+            }
+            @media(min-width:1100px){
+                width: 48rem;
+            }
+            @media(min-width:1400px){
+                width: 62rem;
+            }
+            .owl-nav{
+                .owl-next,.owl-prev{
+                    background:#00bb97;
+                    border-radius: 100%;
+                    width: 60px;
+                    min-height: 60px;
+                    @media(max-width:500px){
+                        width: 11vw;
+                        height: 11vw;
+                        min-height: 11vw;
+                    }
+                    .fas{
+                        display: flex;
+                    }
+                    .fas::before{
+                        font-size: 21px;
+                        @media(max-width:500px){
+                            font-size: 4vw;
+                        }
+                    }
+                }
+                .owl-prev{
+                    left: -2rem;
+                    @media(max-width:500px){
+                        left: -5vw;
+                    } 
+                }
+                .owl-next{
+                    right: -2rem!important;
+                    @media(max-width:500px){
+                        right: -5vw!important;
+                    }
+                }
+            }
+            .tl-image.img-name,.img-name{
+                padding-top: 53%!important;
+            }
+        }
+        .section-select-modelo{
+            position: relative;
+            padding-bottom: 10rem!important;
+            @media(max-width:740px){
+                padding-bottom: 4rem!important;
+            }
+            .img-background-flower{
+                position: absolute;
+                top: -5vw;
+                width: 100%;
+                z-index: -1;
+                @media(max-width:500px){
+                    top: -19vw;
+                }
+            }
+            
+        }
+        .contentImgTitle{
+            padding-bottom: 2rem;
+            @media(max-width:500px){
+                padding-bottom: 0rem;
+            }
+        }
+        .section-fotos-departamento{
+            margin-top: 4rem;
+            margin-bottom: 7rem;
+        }
+        .imgtitle{
+            background-image: none!important;
+            height: 25px;
+        }
+        .paloma-bird{
+            display: none;
+        }
+        .geomanist-light.fsize-2-3vw{
+            color: #004A43;
+        }
+        .geomanist-light{
+            color: #004A43;
+            .geomanist-bold{
+                color: #00bb97;
+            }
+        }
+        .text-fase-1{
+            // display:none!important;
+        }
+        .text-atributo{
+            color: white;
+            @media(min-width:740px){
+                width: 8vw!important;
+            }
+        }
+        .content_estado{
+            background: #00BB97;
+            background-image: none!important;
+            font-family: "Geomanist Regular";
+            height: 6rem;
+            
+            @media(max-width:740px){
+                height: 3.5rem;
+            }
+            .text-fase-2,.text-fase-1{
+                color: white;
+                font-size: 1.3rem;
+                letter-spacing: .2rem;
+                @media(max-width:740px){
+                    font-size: .9rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .best-place{
+            width: 14rem;
+            height: 5rem;
+            object-fit: contain;
+        }
+        .atributo{
+            .icon{
+                background-position: center;
+                background-color: transparent!important;
+                width: 4.4vw!important;
+                height: 4.4vw!important;
+                background-size: contain;
+                @media(max-width:500px){
+                    width: 12.4vw !important;
+                    height: 12.4vw !important;
+                }
+            }
+        }
+        .img-render{
+            @media(max-width:500px){
+                width: 100%;
+                padding-bottom: 0vw;
+            }
+            img{
+                transform: translateY(0vw);
+                position: absolute;
+                bottom: 0;
+                width: 110%;
+                max-width: 110%;
+                right: 0;
+                @media(max-width:500px){
+                    position: absolute;
+                    left: -14vw;
+                }
+                @media(max-width:740px){
+                    position: relative;
+                }
+            }
+        }
+        .row.lightGallery.mt-5{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .Coltipologia{
+                width: 25rem;
+                max-width: 25rem;
+                min-width: 25rem;
+                margin-bottom: 1rem;
+                @media(max-width:500px){
+                    min-width: 88vw;
+                }
+            }
+        }
+        .atributos-col{
+            margin-bottom: 5rem;
+            @media(max-width:740px){
+                margin-bottom: 1rem;
+            }
+        }
+        .intersection-partTop,.intersection-partBottom{
+            display: none;
+        }
+        .section.section-intersection{
+            @media(max-width:500px){
+                transform: translateY(-34px);
+                padding-top: 0!important;
+            }
+            .text-fase-1{
+                @media(max-width:500px){
+                    display: inherit!important; 
+                }
+            }
+        }
+        .content-render.geomanist-regular{
+            position: relative;
+            padding-top: 11rem;
+            flex-direction: row-reverse;
+            @media(max-width:740px){
+                padding-top: 4rem;
+            }
+            .background-fase-2{
+                top: 0;
+                left: 0;
+                width: 100%;
+                position: absolute;
+                @media(max-width:1100px){
+                    height: 100%;
+                    object-fit: cover;
+                }   
+            }
+        }
+        .content-vista-espectacular{
+            flex-direction: row-reverse;
+            padding-left: 3rem!important;
+            padding-right: 3rem!important;
+        }
+        .content-vista-espectacular{
+            margin-top: 5rem;
+            margin-bottom: 10rem;
+            @media(max-width:740px){
+                margin-top: 2rem;
+            }
+            @media(min-width:1400px){
+                margin-bottom: 12rem;
+            }
+            .title-vista-espectacular{
+                color: #004a43;
+                .geomanist-bold{
+                    color:#00bb97
+                }
+            }
+            .subtitle-vista-espectacular{
+                color: #004a43;
+                @media(max-width:500px){
+                    width: 17rem;
+                }
+                @media(max-width:740px){
+                    width: 30rem;
+                }
+                .geomanist-bold{
+                    color:#00bb97
+                }
+            }
+        }
+        .section-tramado::before{
+            background-image:url(../../images/fases/compress-background-flower.webp);
+            @media(max-width:740px){
+                background-image:url(../../images/fases/background-flower-movil.png);
+                background-size: cover;
+                height: 100%;
+            }
+        }
+        .hierba{
+            display: none;
+        }
+        .topPart{
+            display: none;
+        }
+        .section-contact{
+            position: relative;
+            background: transparent;
+            padding-top: 5rem;
+            overflow: hidden;
+            @media(max-width:500px){
+                padding-top: 0rem;
+            }
+            .checkbox-nesta input[type=checkbox]:checked+label>span{
+                background-color:#00bb97!important
+            }
+            .btn-nesta.btn-green{
+                border-color: #00bb97;
+                color: #00bb97;
+            }
+            .btn-nesta.btn-green:hover{
+                background: #00bb97;
+                color: white;
+            }
+            .img-flower{
+                position: absolute;
+                width: 100%;
+                height: auto;
+                top: 0;
+                left: 0;
+            }
+            .contactTextTitle{
+                color: #004a43!important;
+            }
+        }
+        .content_estado-footer{
+            padding-left: 6vw;
+            padding-right: 6vw;
+            .text-fase-2,.text-fase-1{
+                font-size: .8rem;
+                letter-spacing: inherit;
+            }
+        }
+        .content-text-intersection{
+            color: white;
+            .badassmoon{
+                @media(max-width:540px){
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .fase-2::before{
+        background-image: none!important;
+        background: white!important;
+    }
+
+}

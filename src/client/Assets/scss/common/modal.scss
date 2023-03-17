@@ -1,0 +1,117 @@
+.legal-popup,
+.pandemic-popup {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+
+    &::before {
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        opacity: .7;
+        z-index: -1;
+        content: '';
+    }
+
+    .content {
+        width: 26%;
+        position: relative;
+
+        .close {
+            color: black;
+            top: 12%;
+            right: 1.2%;
+            font-size: 3vw;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 0;
+            font-weight: 300;
+            position: absolute;
+        }
+
+        ul {
+            list-style: none;
+            background-color: white;
+            padding: 4% 7%;
+            border-radius: 20px;
+
+            li {
+                padding: 1% 0;
+
+                a {
+                    text-decoration: none;
+                    color: #868686;
+                    font-size: 1vw;
+                    transition: .25s all linear;
+
+                    &:hover {
+                        color: darken(#868686, 50%);
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+
+        // display: flex;
+        .content {
+            width: 90%;
+
+            .close {
+                font-size: 9vw;
+                right: 1.5vw;
+            }
+
+            ul a {
+                font-size: 4vw !important;
+            }
+        }
+
+    }
+}
+
+.pandemic-popup {
+    display: flex;
+    z-index: 101;
+
+    .content {
+        width: 44%;
+        // top: 9%;
+
+        img {
+            width: 100%;
+        }
+        .close {
+            top: 4%;
+        }
+        .stay,
+        .wsp {
+            position: absolute;
+            width: 23%;
+            height: 14%;
+        }
+
+        .wsp {
+            right: 32%;
+            bottom: 18%;
+        }
+
+        .stay {
+            bottom: 18%;
+            right: 8%;
+
+        }
+
+        @media screen and (max-width: 750px) {
+            width: 99%;
+        }
+    }
+}
